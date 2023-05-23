@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Outlook_Nublado <= 0.5\nentropy = 0.94\nsamples = 14\nvalue = [5, 9]\nclass = Sim", fillcolor="#a7d3f3"] ;
+1 [label="Umidade_Alta <= 0.5\nentropy = 1.0\nsamples = 10\nvalue = [5, 5]\nclass = Não", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Vento_Forte <= 0.5\nentropy = 0.722\nsamples = 5\nvalue = [1, 4]\nclass = Sim", fillcolor="#6ab6ec"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = Sim", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="Temperatura_Frio <= 0.5\nentropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = Não", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Sim", fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Não", fillcolor="#e58139"] ;
+4 -> 6 ;
+7 [label="Outlook_Chuvoso <= 0.5\nentropy = 0.722\nsamples = 5\nvalue = [4, 1]\nclass = Não", fillcolor="#eca06a"] ;
+1 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = Não", fillcolor="#e58139"] ;
+7 -> 8 ;
+9 [label="Vento_Fraco <= 0.5\nentropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = Não", fillcolor="#ffffff"] ;
+7 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Não", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Sim", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = Sim", fillcolor="#399de5"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
